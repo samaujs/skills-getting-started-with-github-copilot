@@ -113,9 +113,25 @@ button:hover {
   padding: 10px;
   border-radius: 4px;
 }
+    list-style: none;
+    padding-left: 0;
 
-.success {
-  background-color: #e8f5e9;
+  .participant-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  .delete-icon {
+    cursor: pointer;
+    color: #e74c3c;
+    margin-left: 10px;
+    font-size: 1.1em;
+    transition: color 0.2s;
+  }
+  .delete-icon:hover {
+    color: #c0392b;
   color: #2e7d32;
   border: 1px solid #a5d6a7;
 }
