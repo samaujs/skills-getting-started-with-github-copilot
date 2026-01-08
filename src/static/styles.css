@@ -113,9 +113,25 @@ button:hover {
   padding: 10px;
   border-radius: 4px;
 }
+    list-style: none;
+    padding-left: 0;
 
-.success {
-  background-color: #e8f5e9;
+  .participant-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  .delete-icon {
+    cursor: pointer;
+    color: #e74c3c;
+    margin-left: 10px;
+    font-size: 1.1em;
+    transition: color 0.2s;
+  }
+  .delete-icon:hover {
+    color: #c0392b;
   color: #2e7d32;
   border: 1px solid #a5d6a7;
 }
@@ -141,4 +157,32 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #eef2f7;
+  border-radius: 4px;
+}
+
+.participants-section strong {
+  color: #3949ab;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.participants-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin: 0;
+  font-size: 15px;
 }
